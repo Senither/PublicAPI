@@ -145,38 +145,38 @@ public class GuildReply extends AbstractReply {
                         '}';
             }
         }
-    }
 
-    public class Rank {
-        private String name;
-        private String tag;
-        private ZonedDateTime created;
-        private int priority;
+        public class Rank {
+            private String name;
+            private String tag;
+            private ZonedDateTime created;
+            private int priority;
 
-        public String getName() {
-            return name;
-        }
+            public String getName() {
+                return name;
+            }
 
-        public String getTag() {
-            return tag;
-        }
+            public String getTag() {
+                return tag;
+            }
 
-        public ZonedDateTime getCreated() {
-            return created;
-        }
+            public ZonedDateTime getCreated() {
+                return created;
+            }
 
-        public int getPriority() {
-            return priority;
-        }
+            public int getPriority() {
+                return priority;
+            }
 
-        @Override
-        public String toString() {
-            return "Rank{" +
-                    "name=" + name +
-                    ", tag=" + tag +
-                    ", created=" + created +
-                    ", priority=" + priority +
-                    '}';
+            @Override
+            public String toString() {
+                return "Rank{" +
+                        "name=" + name +
+                        ", tag=" + tag +
+                        ", created=" + created +
+                        ", priority=" + priority +
+                        '}';
+            }
         }
     }
 }
