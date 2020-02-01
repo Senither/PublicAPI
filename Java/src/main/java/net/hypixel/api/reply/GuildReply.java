@@ -30,6 +30,7 @@ public class GuildReply extends AbstractReply {
         private Boolean publiclyListed;
         private Banner banner;
         private List<Member> members;
+        private List<Rank> ranks;
         private int coins;
         private int coinsEver;
         private ZonedDateTime created;
@@ -63,6 +64,10 @@ public class GuildReply extends AbstractReply {
 
         public List<Member> getMembers() {
             return members;
+        }
+
+        public List<Rank> getRanks() {
+            return ranks;
         }
 
         public int getCoins() {
@@ -139,6 +144,39 @@ public class GuildReply extends AbstractReply {
                         ", expHistory=" + expHistory.toString() +
                         '}';
             }
+        }
+    }
+
+    public class Rank {
+        private String name;
+        private String tag;
+        private ZonedDateTime created;
+        private int priority;
+
+        public String getName() {
+            return name;
+        }
+
+        public String getTag() {
+            return tag;
+        }
+
+        public ZonedDateTime getCreated() {
+            return created;
+        }
+
+        public int getPriority() {
+            return priority;
+        }
+
+        @Override
+        public String toString() {
+            return "Rank{" +
+                    "name=" + name +
+                    ", tag=" + tag +
+                    ", created=" + created +
+                    ", priority=" + priority +
+                    '}';
         }
     }
 }
